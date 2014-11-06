@@ -1,0 +1,11 @@
+title:            Habemvs Epiphania
+email:            salizzar&#64;gmail.com
+description: >
+  Personal blog from Marcelo Pinheiro, a Software Engineer from Real World.
+
+baseurl:          "" # the subpath of your site, e.g. /blog/
+url:              http://salizzar.net
+twitter_username: salizzar
+github_username:  salizzar
+
+markdown:         kramdown

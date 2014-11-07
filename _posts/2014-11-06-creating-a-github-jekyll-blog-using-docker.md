@@ -123,7 +123,7 @@ Add a content in your file, respecting markdown identations:
 	layout:		post
 	date:		2014-11-06 20:20:00
 	---
-	Hello, stalker! That's my first post.
+	Hello, stalker! This is my first post.
 
 It's time to commit to your GitHub repository. Follow the steps on [Github Pages][githubpages] to create a repository - named `your-github-user.github.io`. After this, start a empty git repository in your working directory and set repository URL:
 

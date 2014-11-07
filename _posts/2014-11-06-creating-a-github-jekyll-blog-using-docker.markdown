@@ -1,10 +1,14 @@
 ---
-layout:		post
+author:		Marcelo Pinheiro
 title:		Creating a GitHub Jekyll Blog using Docker
+layout:		post
 date:		2014-11-06 20:20:00
-categories:	github jekyll docker
+permalink:	/2014/11/06/creating-a-github-jekyll-blog-using-docker
+categories:
+  - github
+  - jekyll
+  - docker
 ---
-
 Hello everyone,
 
 Let's talk about how to create a blog using Docker containerized Jekyll to publish posts using GitHub Pages.

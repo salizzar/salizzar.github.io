@@ -104,7 +104,9 @@ The command above do this:
 
 * Forces Jekyll to polling periodically in order to detect changes (`--force_polling`)
 
-Open your browser and type Docker IP (setted by `DOCKER_HOST` envvar) followed by :4000 (Jekyll HTTP Server port) and you see your blog running on Docker.
+Open your browser and type Docker IP (setted by `DOCKER_HOST` envvar) followed by :4000 (Jekyll HTTP Server port) and you see your blog running on Docker. If you runs OSX, type in your terminal:
+
+	$ open `echo $DOCKER_HOST | sed 's/tcp/http/' | sed 's/2376/4000/'`
 
 I recommend you to look at [Jekyll Documentation][jekyll_docs] to configure your personal information inside `_config.yml` file, setting custom templates / add plugins.
 

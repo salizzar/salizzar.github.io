@@ -109,7 +109,7 @@ Open your browser and type Docker IP (setted by `DOCKER_HOST` envvar) followed b
 
 	$ open `echo $DOCKER_HOST | sed 's/tcp/http/' | sed 's/2376/4000/'`
 
-I recommend you to look at [Jekyll Documentation][jekyll_docs] and [GitHub Pages post explaining to use Jekyll][githubpages_docs] to configure your personal information inside `_config.yml` file, setting custom templates / add plugins.
+I recommend you to look at [Jekyll Documentation][jekyll_docs] and [GitHub Pages post explaining how to use Jekyll][githubpages_docs] to configure your personal information inside `_config.yml` file, setting custom templates / add plugins.
 
 [jekyll]: 		http://jekyllrb.com
 [markdown]:		http://daringfireball.net/projects/markdown/

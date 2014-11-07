@@ -11,13 +11,13 @@ categories:
 ---
 Hello everyone,
 
-Let's talk about how to create a blog using Docker containerized Jekyll to publish posts using GitHub Pages.
+Let's talk about how to create a blog using Docker running a containerized Jekyll to publish posts on GitHub Pages.
 
 If you don't know, [Jekyll][jekyll] is a famous blog engine written in Ruby that uses [Markdown][markdown] files as blog posts, avoiding use of databases to store stuff. Jekyll is nice due for simplicity: you need only to create a single `.markdown` or `.md` file inside `_posts` directory and run the following command in your terminal to see your blog running:
 
 	$ ruby -S jekyll serve
 
-I've used [Octopress][octopress], a framework written above Jekyll. It's nice, but you have some effort to create blog skeleton and make it working well with [GitHub Pages][githubpages]. I decided to be more simplistic today.
+I've used [Octopress][octopress], a framework written above Jekyll. It's nice, but you have some effort to create blog skeleton and make it working well with [GitHub Pages][githubpages]. I decided to be more simplistic today, changing to Jekyll.
 
 Well, it looks great but where [Docker][docker] enter? Some months ago, I'm moving from [Vagrant][vagrant] to Docker to have more agility because containers are MUCH more thin than entire VM's running in your machine. After some research on the interwebs, I decided to create a blog from scratch using Docker and Jekyll. I will presume that you already know how Docker works and have some contact with `Dockerfile` config files.
 
@@ -84,7 +84,8 @@ Jekyll will create the structure above. The `--force` parameter forces Jekyll to
 
 Now is time to run Jekyll HTTP server to see the magic happening:
 
-	$ docker run -it -v $(pwd):/root -p 4000:4000 myblog ruby -S jekyll serve --host=0.0.0.0 --watch --force_polling
+	$ docker run -it -v $(pwd):/root -p 4000:4000 myblog \
+		ruby -S jekyll serve --host=0.0.0.0 --watch --force_polling
 
 The command above do this:
 
@@ -104,17 +105,17 @@ The command above do this:
 
 * Forces Jekyll to polling periodically in order to detect changes (`--force_polling`)
 
-Open your browser and type Docker IP (setted by `DOCKER_HOST` envvar) followed by :4000 (Jekyll HTTP Server port) and you see your blog running on Docker. If you runs OSX, type in your terminal:
+Open your browser and type Docker IP (setted by `DOCKER_HOST` envvar) followed by :4000 (Jekyll HTTP Server port) and you see your blog running on Docker. If you run OSX, type in your terminal:
 
 	$ open `echo $DOCKER_HOST | sed 's/tcp/http/' | sed 's/2376/4000/'`
 
-I recommend you to look at [Jekyll Documentation][jekyll_docs] to configure your personal information inside `_config.yml` file, setting custom templates / add plugins.
+I recommend you to look at [Jekyll Documentation][jekyll_docs] and [GitHub Pages post explaining to use Jekyll][githubpages_docs] to configure your personal information inside `_config.yml` file, setting custom templates / add plugins.
 
-
-[jekyll]: 	http://jekyllrb.com
-[markdown]:	http://daringfireball.net/projects/markdown/
-[octopress]:	http://octopress.org
-[githubpages]:	https://pages.github.com
-[docker]:	https://docker.com
-[vagrant]:	https://vagrantup.com
-[jekyll_docs]:	http://jekyllrb.com/docs/home/
+[jekyll]: 		http://jekyllrb.com
+[markdown]:		http://daringfireball.net/projects/markdown/
+[octopress]:		http://octopress.org
+[githubpages]:		https://pages.github.com
+[docker]:		https://docker.com
+[vagrant]:		https://vagrantup.com
+[jekyll_docs]:		http://jekyllrb.com/docs/home/
+[githubpages_docs]:	https://help.github.com/articles/using-jekyll-with-pages/

@@ -1,9 +1,8 @@
 ---
-layout: 	page
 title:		About Me
+layout: 	page
 permalink:	/about/
 ---
-
 Hello stalker,
 
 My name is Marcelo Pinheiro, a brazilian gaúcho (born on Rio Grande do Sul) from Porto Alegre.
@@ -17,6 +16,6 @@ Since 2012 I started to work to be a full-stack developer - sometimes called Dev
 I have a [GitHub][github] account and a [LinkedIn][linkedin] profile. Be welcome to contact me. My [Twitter][twitter] is for personal use mainly, but sometimes you can see some nice stuff related to programming languages, techniques and culture. [Here][facebook] is my Facebook page, if you want to get a good laugh.
 
 [github]:	https://github.com/salizzar
-[linkedin]:	https://linkedin.com/
+[linkedin]:	http://www.linkedin.com/pub/marcelo-correia-pinheiro/7/484/822
 [twitter]:	https://twitter.com/salizzar
 [facebook]:	https://facebook.com/salizzar

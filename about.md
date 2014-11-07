@@ -5,7 +5,7 @@ permalink:	/about/
 ---
 Hello stalker,
 
-My name is Marcelo Pinheiro, a brazilian gaúcho (born on Rio Grande do Sul) from Porto Alegre.
+My name is Marcelo Pinheiro, a brazilian from Porto Alegre or "gaúcho" (name of people born on Rio Grande do Sul State).
 
 I work with software development since 2000, getting contact from ASP, PHP, Microsoft.NET, Java to Ruby, Erlang and Golang now. Include on list relational databases like Microsoft SQL Server, MySQL, PostgreSQL and non-relational databases as MongoDB and Redis.
 

@@ -111,6 +111,35 @@ Open your browser and type Docker IP (setted by `DOCKER_HOST` envvar) followed b
 
 I recommend you to look at [Jekyll Documentation][jekyll_docs] and [GitHub Pages post explaining how to use Jekyll][githubpages_docs] to configure your personal information inside `_config.yml` file, setting custom templates / add plugins.
 
+To create a post, generate a markdown file inside `_posts` directory:
+
+	$ touch _posts/`date +%Y-%m-%d`-my-first-post.md
+
+Add a content in your file, respecting markdown identations:
+
+	---
+	author:		Marcelo Pinheiro
+	title:		My First Post
+	layout:		post
+	date:		2014-11-06 20:20:00
+	---
+	Hello, stalker! That's my first post.
+
+It's time to commit to your GitHub repository. Follow the steps on [Github Pages][githubpages] to create a repository - named `your-github-user.github.io`. After this, start a empty git repository in your working directory and set repository URL:
+
+	$ git init .
+	$ git remote add origin git@github.com:<your-github-user>.github.io.git
+
+Add Jekyll skeleton, commit and push.
+
+	$ git add .
+	$ git commit -m "Big Bang commit, oh yeah."
+	$ git push origin master
+
+Open your GitHub Pages URL - `http://your-github-user.github.io` - and check the result.
+
+That's all folks.
+
 [jekyll]: 		http://jekyllrb.com
 [markdown]:		http://daringfireball.net/projects/markdown/
 [octopress]:		http://octopress.org

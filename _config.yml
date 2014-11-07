@@ -1,7 +1,8 @@
 title:            Marcelo Pinheiro
 email:            salizzar&#64;gmail.com
 description: >
-  Personal blog from Marcelo Pinheiro, a Software Engineer from Real World.
+  Habemvs Epiphania: Random thoughts about programming, system administration,
+  DevOps culture and personal weirdness.
 
 baseurl:          "" # the subpath of your site, e.g. /blog/
 url:              http://salizzar.net
